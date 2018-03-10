@@ -1,5 +1,3 @@
-#DataCamp course notes - Writing a generator to load data(2)
-
 # Define read_large_file()
 def read_large_file(file_object):
     """A generator function to read a large file lazily."""
@@ -8,7 +6,7 @@ def read_large_file(file_object):
     while True:
 
         # Read a line from the file: data
-        data = readline(file_object)
+        data = file_object.readline()
 
         # Break if this is the end of the file
         if not data:
