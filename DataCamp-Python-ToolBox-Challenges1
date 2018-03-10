@@ -1,0 +1,48 @@
+###DataCamp Python Toolbox Part 2 - Practice Exercises Notes
+
+- Challenges
+
+### 1
+
+def square(s):
+    """Returns the area and perimeter of a square"""
+    try:
+        a = s * s
+        p = 4 * s 
+        return a, p
+    except TypeError:
+       print('s can not be a string')
+   
+square('2')
+
+Result = s can not be a string
+
+### 2
+
+def say_hello():
+    """Prints Hello World!"""
+    print('Hello World!')
+say_hello()
+
+
+### 3
+
+def sample_fun():
+    """A sample function"""
+    print('This is a user-defined function')
+
+sample_fun()
+
+Result = This is a user-defined function
+
+
+### 4
+
+def celsius(x):
+    """Converts the temperature from Fahrenheit to Celsius"""
+    y = (x - 32) * 5 / 9
+    return y
+# Convert 100 degrees Fahrenheit to Celsius
+print(celsius(100))
+
+Result = 37.77777777777778
