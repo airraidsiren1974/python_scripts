@@ -1,4 +1,4 @@
-###function to use for data validation
+###function to use for data validation - DATACAMP exercise
 
 def check_null_or_valid(row_data):
     """Function that takes a row of data,
