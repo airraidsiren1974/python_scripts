@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Jun 11 12:24:26 2018
+
+@author: JackieMartin
+"""
+
+import pandas as pd
+
+import matplotlib.pyplot as plt
+
+filepath = '/Users/JackieMartin/Downloads/iris.csv'
+
+iris = pd.read_csv(filepath) ###read the data into a dataframe
+
+###check out the shape (cols, rows)
+
+###print(iris.shape)
+
+iris.plot(x='sepal_length', y='sepal_width', kind='scatter')
+
+plt.xlabel('sepal length (cm)')
+
+plt.ylabel('sepal width (cm)')
+
+plt.show()
+
+
+###box plot
+
+iris.plot(x='sepal_length', kind='box')
+
+plt.ylabel('sepal length (cm)')
+
+plt.show()
+
+
+###histogram
+
+iris.plot(x='sepal_length', kind='hist', bins=30, range=(4,8), normed=True)
+
+plt.xlabel('sepal length (cm)')
+
+plt.show()
+
+###histogram with cummulative distribution function
+
+iris.plot(x='sepal_length', kind='hist', bins=30, range=(4,8), cumulative=True, normed=True)
+
+plt.xlabel('sepal length (cm)')
+
+plt.title('Cumulative distribution function (CDF)')
+
+plt.show()
